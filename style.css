@@ -1,0 +1,37 @@
+#body {
+  background-color: #1ed760;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  padding-bottom: 0rem;
+}
+.top-margin {
+  margin-top: 2rem;
+}
+button {
+  background-color: #1ed760;
+}
+#heading {
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#grid img {
+  height: 125px;
+  width: 125px;
+  padding: 0;
+  margin: 0;
+}
+.page-footer {
+  color: white;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-desk {
+    margin-bottom: -10rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
