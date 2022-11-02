@@ -1,4 +1,5 @@
 # Pretty strange page 🤺
+Demo is [here](https://talmkg.github.io/Favourite-Music-Page-Spotify/) 💤
 <p align="center">
   <img src="https://i.imgur.com/SZN0EHA.png"/>
   <h4>(There are 2 ways of representing fav. albums) </h4>
