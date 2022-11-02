@@ -1,1 +1,1 @@
-# fav-music-page
+# Pretty strange page 🤺
