@@ -28,3 +28,40 @@ button {
 .page-footer {
   color: white;
 }
+.jumbotron {
+  background-image: url(https://storage.googleapis.com/pr-newsroom-wp/1/2019/04/burst5-1920x733.png);
+}
+.song-info {
+  list-style-type: none;
+}
+.jumbotron {
+  animation: fadeIn 2s;
+  border: 3px solid rgb(199, 199, 199);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*.jumbotron:hover {
+  animation: spotify-border-color-change 2s;
+}
+@keyframes spotify-border-color-change {
+  0% {
+    border-color: rgb(92, 255, 87);
+  }
+  25% {
+    border-color: rgb(255, 251, 2);
+  }
+  50% {
+    border-color: rgb(255, 187, 0);
+  }
+  100% {
+    border-color: rgb(148, 247, 56);
+  }
+}
+*/
