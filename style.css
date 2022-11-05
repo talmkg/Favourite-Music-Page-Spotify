@@ -67,6 +67,7 @@ button {
 */
 #table {
   border: 3px solid rgba(102, 102, 102, 0.575);
+  border-radius: 4px;
 }
 .card {
   overflow: hidden;
