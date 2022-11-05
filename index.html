@@ -226,6 +226,7 @@
                         <tr>
                           <th scope="col">#</th>
                           <th scope="col">Artist <i class="fa-regular fa-user"></i></th>
+                          <th scope="col">Song <i class="fa-solid fa-music"></i></th>
                           <th scope="col">Year <i class="fa-regular fa-clock"></i></th>
                           <th scope="col">Duration <i class="fa-regular fa-clock"></i></th>
                           <th scope="col"><i class="fa-regular fa-square-plus"></i> Action <i class="fa-regular fa-square-minus"></i></th>
@@ -235,6 +236,7 @@
                         <tr>
                           <th scope="row">1</th>
                           <td>Central Cee</td>
+                          <td>Song#</td>
                           <td>2022</td>
                           <td>2min</td>
                           <td><button type="button" addEventListener(click, event) data-action="remove-row" class="btn btn-danger" id="myBtn">Delete <i class="fa-regular fa-trash-can"></i></button></td>
@@ -242,6 +244,7 @@
                         <tr>
                           <th scope="row">2</th>
                           <td>Central Cee</td>
+                          <td>Song#</td>
                           <td>2022</td>
                           <td>1.49s</td>
                           <td><button type="button" data-action="remove-row" class="btn btn-danger">Delete <i class="fa-regular fa-trash-can"></i></button></td>
@@ -250,6 +253,7 @@
                         <tr>
                           <th scope="row">3</th>
                           <td>Central Cee</td>
+                          <td>Song#</td>
                           <td>2022</td>
                           <td>2.40s</td>
                           <td><button type="button" data-action="remove-row" class="btn btn-danger">Delete <i class="fa-regular fa-trash-can"></i></button></td>
@@ -277,15 +281,19 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-1">
                       
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroup-sizing-default">Artist</span>
                       </div>
+                      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroup-sizing-default">Song</span>
                       </div>
                       <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                      
+                      <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroup-sizing-default">Year</span>
                       </div>
@@ -294,6 +302,9 @@
                         <span class="input-group-text" id="inputGroup-sizing-default">Duration</span>
                       </div>
                       <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    
+                    
                     </div>
                   </div>
                   <div class="modal-footer">
