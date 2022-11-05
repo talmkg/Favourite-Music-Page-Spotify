@@ -202,38 +202,90 @@
         </div>
         <div id="table" class="mt-3">
         <table class="table table-striped table-dark ">
-          <h3 class="text-center text-light mt-3">Khabib</h3>
-          <thead>
+          <div class="d-flex justify-content-between p-1 ml-3">
+          <h3 class="text-center text-light mt-3">Album: Khabib</h3>
+          <button type="button" addEventListener(click, event) class="btn btn-danger" id="myBtn">Hide/Show <i class="fa-regular fa-eye"></i>
+          </div>
+          <div class="d-flex justify-content-center">
+            <thead >
             
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Artist</th>
-              <th scope="col">Duration</th>
-              <th scope="col">Action</th>
+              <th scope="col">Artist <i class="fa-regular fa-user"></i></th>
+              <th scope="col">Year <i class="fa-regular fa-clock"></i></th>
+              <th scope="col">Duration <i class="fa-regular fa-clock"></i></th>
+              <th scope="col"><i class="fa-regular fa-square-plus"></i> Action <i class="fa-regular fa-square-minus"></i></th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
               <td>Central Cee</td>
+              <td>2022</td>
               <td>2min</td>
-              <td><button type="button" addEventListener(click, event) data-action="remove-row" class="btn btn-danger" id="myBtn">Delete</button></td>
+              <td><button type="button" addEventListener(click, event) data-action="remove-row" class="btn btn-danger" id="myBtn">Delete <i class="fa-regular fa-trash-can"></i></button></td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>Central Cee</td>
+              <td>2022</td>
               <td>1.49s</td>
-              <td><button type="button" data-action="remove-row" class="btn btn-danger">Delete</button></td>
+              <td><button type="button" data-action="remove-row" class="btn btn-danger">Delete <i class="fa-regular fa-trash-can"></i></button></td>
             </tr>
+            
             <tr>
               <th scope="row">3</th>
               <td>Central Cee</td>
+              <td>2022</td>
               <td>2.40s</td>
-              <td><button type="button" data-action="remove-row" class="btn btn-danger">Delete</button></td>
+              <td><button type="button" data-action="remove-row" class="btn btn-danger">Delete <i class="fa-regular fa-trash-can"></i></button></td>
             </tr>
+            
           </tbody>
+          
         </table>
+        <div class="d-flex justify-content-center m-3">
+
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Add Song
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Adding a song</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Artist</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Year</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Duration</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      
           <br>
           <div class="card mb-3">
             <img id="artist" class="card-img-top" src="https://krui.fm/wordpress/wp-content/uploads/2018/04/a2938799276_10.jpg" alt="Card image cap">
